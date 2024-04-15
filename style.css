@@ -1,0 +1,485 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Cormorant Garamond', serif; */
+
+*{
+    font-family:'Cormorant Garamond', serif;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    box-sizing:border-box;
+    text-transform:capitalize;
+    transition:1s linear;
+}
+
+html{
+    font-size:60%;
+    overflow:hidden;
+    scroll-padding-top:9rem;
+    scroll-behavior:smooth;
+    /* scroll-padding:10rem ; */
+
+}
+
+/* html::webkit-scrollbar{
+    width:.8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+
+    background:#fff;
+    border-radius:5rem;
+} */
+
+body{
+    background:black;
+}
+
+section{
+    padding:2rem.7%;
+}
+
+
+
+.header{
+    background:black;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.8rem;
+    border-bottom:1rem solid balck;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    box-shadow:2px 2px 10px rgb(99, 87, 87);
+}
+
+.header .logo img{
+    height:8rem;
+    border-radius:90%;
+}
+
+
+
+.header .navbar a{
+    margin:0rem;
+    font-size:2rem;
+    color:white;
+    padding:2.3rem;
+}
+
+.header .navbar a:hover{
+    color:rgb(110, 28, 28);
+    border-bottom:2px solid white;
+    padding-bottom:0.5rem;
+}
+
+.header .icons a{
+    color:white;
+    cursor:pointer;
+    font-size:2.5rem;
+    margin-left:5rem;
+} 
+
+.header .icons a:hover{
+    color:brown;
+}
+
+.header .search-form{
+    position:absolute;
+    top:115%;
+    right:4%;
+    background:white;
+    width:50rem;
+    height:3 rem;
+    display:flex;
+    align-items:center;
+    transform:scaleY();
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height:100%;
+    width:100%;
+    font-size:1.6rem;
+    color:black;
+    padding:1rem;
+    text-transform:none;
+}
+
+.header .search-form label:hover{
+    color:brown;
+}
+
+.btn{
+    padding:12px;
+    font-size:10px;
+    color:white;
+    background:burlywood;
+    cursor:pointer;
+    width:120px;
+    height:30px;
+    border-radius:5px;
+    text-align:center;
+}
+
+.btn:hover{
+    letter-spacing:0.2rem;
+}
+
+.home{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:url(coff4.jpg)no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.home .contents{
+    max-width:60 rem;
+}
+
+.home .content h3{
+    font-size:6rem;
+    text-transform:uppercase;
+    color:white
+}
+
+.home .content p{
+    font-size:1rem;
+    font-weight:lighter;
+    line-height:1.8;
+    color:#eee;
+    padding:1rem 0;
+}
+
+.heading{
+    text-align:center;
+    color:white;
+    text-transform:uppercase;
+    padding-bottom:3.5rem;
+    font-size:4rem;
+}
+
+.heading span{
+    color:burlywood;
+}
+
+.about .row{
+    display:flex;
+    align-items:center;
+    background:black;
+    flex-wrap:wrap;
+    position:absolute;
+}
+
+.about .row .image{
+    flex:1 1  45rem;
+}
+
+.about .row .image img{
+    background:url(cof5.jpg) center center no-repeat;
+    width:90%;
+    height:50rem;
+    background-position:center;
+    background-size:cover;
+    margin-top:0%;
+    margin-left:5%;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+    padding:5rem;
+}
+
+
+.about .row .content h2{
+    font-size:3rem;
+    color:white;
+
+}
+
+.about .row .content p{
+    font-size:1.5rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height:1.8;
+}
+
+.menu{
+    display:flex;
+    position:relative;
+    margin-top:50rem;
+    justify-content:center;
+}
+
+.menu .box-container{
+    position:relative;
+    margin-top:10rem;
+    margin-left:10px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    gap:1rem;
+
+}
+
+
+
+.menu .box-container .box{
+    display:block;
+    padding:5rem;
+    text-align:center;
+    border:2px solid burlywood;
+}
+.menu .box-container .box h3{
+    color:white ;
+    font-size:2rem;
+    padding:1rem 0;
+}
+.menu .box-container .box .price{
+    color:white;
+    font-size:2.5rem;
+    padding:0.5rem-0;
+
+}
+
+.menu .box-container .box span{
+    color:white;
+    font-size:1.5rem;
+    text-decoration:line-through;
+}
+
+.menu .box-container .box:hover{
+    background:white;
+}
+
+.menu .box-container .box:hover > *{
+    color:black;
+} 
+
+
+.menu .box-container .box img{
+    height:10rem;
+}
+
+.menu .box-container .box .btn{
+    display:flex;
+    position:absolute;
+}
+
+.menu.heading{
+    text-align:center;
+    color:white;
+    text-transform:uppercase;
+    padding-bottom:3.5rem;
+    font-size:4rem;
+}
+
+.products .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+}
+
+.products .box-container .box{
+    text-align:center;
+    border:burlywood;
+    padding:2rem;
+}
+
+.products .box-container .box .icons a{
+    height:5rem;
+    width:5rem;
+    line-height:5rem;
+    font-size:2rem;
+    border:black;
+    color:white;
+    margin:0.3rem;
+}
+
+.products .box-container .box .icons a:hover{
+    background:burlywood; 
+}
+
+.products .box-container .box .image{
+    padding:2.5rem 0rem;
+}
+
+.products .box-container .box .image img{
+    height:20rem;
+    width:20rem;
+    border-radius:10px;
+}
+
+.products .box-container .box .content h3{
+    color:white;
+    font-size:2.5rem;
+}
+
+.products .box-container .box .content .stars i{
+    color:burlywood;
+    size:2.5rem;
+}
+
+.products .box-container .box .content .price{
+    color:white;
+    font-size:2rem;
+}
+
+.products .box-container .box .content .price span{
+    color:burlywood;
+    font-size:1.5rem;
+    text-decoration:line-through;
+    font-weight:lighter;
+}
+
+.review .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+}
+
+.review .box-container .box{
+    border:2px solid burlywood;
+    text-align:center;
+    padding:3rem 2rem;
+}
+
+.review .box-container .box p{
+    font-size:1.6rem;
+    line-height:1.8;
+    color:#ccc;
+    padding:2rem 0;
+
+}
+
+.review .box-container .box img{
+    height:200px;
+    width:200px;
+}
+
+.review .box-container .box h3{
+    padding:1rem;
+    font-size:2rem;
+    color:white;
+}
+
+.review .box-container .box .stars{
+    font-size:1.5rem;
+    color:burlywood;
+
+}
+
+.contact .row{
+    display:flex;
+    align-items:center;
+    background:black;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    text-align:center;
+    padding:5rem 2rem;
+    
+}
+
+.contact .row form .inputBox{
+    display:flex;
+    align-items:center;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    border:1px solid black;
+    background:black;
+}
+
+.contact .row form .inputBox span{
+    color:white;
+    font-size:2rem;
+    padding-left:2rem;
+}
+
+.contact .row form .inputBox input{
+    width:100%;
+    padding:2rem;
+    font-size:1.7rem;
+    background:none;
+    color:white;
+    margin-left:20px;
+}
+
+.contact .row form h3{
+    text-transform:uppercase;
+    color:white;
+    font-size:3.5rem;
+}
+
+.footer .share{
+    padding:1rem 0;   
+}
+
+.footer .share a{
+    height:5rem;
+    width:5rem;
+    line-height:5rem;
+    color:white;
+    font-size:2rem;
+    margin-left:280px;
+}
+.footer .share a:hover{
+    color:burlywood;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
